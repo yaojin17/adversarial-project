@@ -1,9 +1,6 @@
 # Attack and Defense 
 Attack and Defense Code for adversarial training project for Machine Learning in Action course in SJTU 
 
-### Baseline
-
-<https://github.com/jiangyangzhou/defense_base>
 
 ### Set up:
 ** Requirement ** `python3`, `pytorch > 1.2`, `tqdm`  
@@ -108,4 +105,3 @@ train.py,infer.py,attack.py中默认模型均为Trades-AWP方法训练得到的W
 
 如果想要测试其他两个防御模型，建议使用attack_main.py进行测试，注意设置model_name为'Resnet18'或者'ChangedResnet18'，其中'Resnet18'为更改训练参数所得的模型，'ChangedResnet18'为尝试使用梯度掩蔽训练得到的模型，攻击方法可按需求参考上面的方式设置。
 
-防御模型的参数文件太大，因此使用[交大云盘](https://jbox.sjtu.edu.cn/l/vFDwGz)存储，你需要下载下来，在目录建一个名为'weight'的文件夹，然后将三个参数文件放入其中。
